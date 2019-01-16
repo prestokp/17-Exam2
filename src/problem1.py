@@ -297,13 +297,13 @@ def problem1b(strings):
            FOR HELP if this problem's specification is not clear to you.
      """
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
-    y = ''
+    y = []
     for k in range (len(strings)):
         if is_prime(len(strings[k])):
-            y = y + strings[k]
+            y = y + [strings[k]]
     return y
 
 
@@ -541,7 +541,7 @@ def problem1d(t, sequence):
     #          Tests have been written for you (above).
     ###########################################################################
     counter = 1
-    for k in range (len(sequence)//2, len(sequence)):
+    for k in range(len(sequence)//2, len(sequence)):
         if sum_of_digits(sequence[k]) > t:
             counter = counter * sequence[k]
         return counter
