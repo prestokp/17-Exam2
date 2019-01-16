@@ -544,7 +544,7 @@ def problem1d(t, sequence):
     for k in range(len(sequence)//2, len(sequence)):
         if sum_of_digits(sequence[k]) > t:
             counter = counter * sequence[k]
-        return counter
+    return counter
     return 1
 
 
